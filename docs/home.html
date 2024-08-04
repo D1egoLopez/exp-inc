@@ -4,24 +4,16 @@
     <title>Expenses</title>
 </head>
 <body>
-    <p>The total sum from the column is: {{ total_sum }}</p>
+    <p>The total sum from the column is: </p>
     <h1>Expenses Data</h1>
     <table>
         <thead>
             <tr>
-                {% for key in data.0.keys %}
-                <th>{{ key }}</th>
-                {% endfor %}
+                
             </tr>
         </thead>
         <tbody>
-            {% for row in data %}
-            <tr>
-                {% for value in row.values %}
-                <td>{{ value }}</td>
-                {% endfor %}
-            </tr>
-            {% endfor %}
+            
         </tbody>
     </table>
 </body>
