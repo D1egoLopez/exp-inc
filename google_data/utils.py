@@ -25,6 +25,6 @@ def sumas_exp_inc():
         total_summs[i] = sum(column_data_as_ints)
         print(total_summs)
 
-sumas_exp_inc()
+    
 
 

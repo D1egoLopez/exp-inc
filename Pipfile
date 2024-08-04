@@ -5,8 +5,13 @@ name = "pypi"
 
 [packages]
 django = "*"
+python-dotenv = "*"
 
 [dev-packages]
+google-auth = "*"
+google-auth-oauthlib = "*"
+google-auth-httplib2 = "*"
+google-api-python-client = "*"
 
 [requires]
 python_version = "3.11"
