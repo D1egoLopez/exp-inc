@@ -8,7 +8,7 @@ def get_data_from_sheet():
     return data
 
 def printing(request):
-    return render(request,'hello.html')
+    return render(request,'docs\hello.html')
 
 def get_sheets():
     spreadsheet = get_google_sheet("DB savings")
@@ -28,7 +28,7 @@ def summas(request):
         #total_summs[0] ==> expensas || total_summs[1] ==> incomes
     egresos = total_summs[0]
     ingresos = total_summs[1]
-    return render(request, 'hello.html', {'egresos' : egresos, 'ingresos' : ingresos})
+    return render(request, 'docs\hello.html', {'egresos' : egresos, 'ingresos' : ingresos})
 
 
 
@@ -39,7 +39,7 @@ def exp(request):
     column_data = column_data[1:]
     column_data_as_ints = [int(value) for value in column_data if value.isdigit()]
     total_summ = sum(column_data_as_ints)
-    return render(request, 'home.html', {'data': data,'total_sum' : total_summ})
+    return render(request, 'docs\home.html', {'data': data,'total_sum' : total_summ})
 
 def inc(request):
     sheet = get_sheets()[1]
@@ -48,7 +48,7 @@ def inc(request):
     column_data = column_data[1:]
     column_data_as_ints = [int(value) for value in column_data if value.isdigit()]
     total_summ = sum(column_data_as_ints)
-    return render(request, 'home.html', {'data': data, 'total_sum' : total_summ})
+    return render(request, 'docs\home.html', {'data': data, 'total_sum' : total_summ})
 
 # Create your views here.
 
