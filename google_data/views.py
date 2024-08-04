@@ -39,7 +39,7 @@ def exp(request):
     column_data = column_data[1:]
     column_data_as_ints = [int(value) for value in column_data if value.isdigit()]
     total_summ = sum(column_data_as_ints)
-    return render(request, 'index.html', {'data': data,'total_sum' : total_summ})
+    return render(request, 'home.html', {'data': data,'total_sum' : total_summ})
 
 def inc(request):
     sheet = get_sheets()[1]
@@ -48,7 +48,7 @@ def inc(request):
     column_data = column_data[1:]
     column_data_as_ints = [int(value) for value in column_data if value.isdigit()]
     total_summ = sum(column_data_as_ints)
-    return render(request, 'index.html', {'data': data, 'total_sum' : total_summ})
+    return render(request, 'home.html', {'data': data, 'total_sum' : total_summ})
 
 # Create your views here.
 
