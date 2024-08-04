@@ -1,2 +1,16 @@
 .env
 Pipfile
+credentials.json
+google_data\credentials.json
+exp_inc/__pycache__/__init__.cpython-311.pyc
+exp_inc/__pycache__/settings.cpython-311.pyc
+exp_inc/__pycache__/urls.cpython-311.pyc
+exp_inc/__pycache__/wsgi.cpython-311.pyc
+google_data/__pycache__/__init__.cpython-311.pyc
+google_data/__pycache__/admin.cpython-311.pyc
+google_data/__pycache__/apps.cpython-311.pyc
+google_data/__pycache__/google_sheets.cpython-311.pyc
+google_data/__pycache__/models.cpython-311.pyc
+google_data/__pycache__/urls.cpython-311.pyc
+google_data/__pycache__/views.cpython-311.pyc
+google_data/migrations/__pycache__/__init__.cpython-311.pyc
