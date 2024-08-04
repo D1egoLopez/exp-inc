@@ -14,3 +14,4 @@ google_data/__pycache__/models.cpython-311.pyc
 google_data/__pycache__/urls.cpython-311.pyc
 google_data/__pycache__/views.cpython-311.pyc
 google_data/migrations/__pycache__/__init__.cpython-311.pyc
+credentials.json
